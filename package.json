@@ -1,0 +1,27 @@
+{
+  "name": "js-mocking-fundamentals",
+  "version": "1.0.0",
+  "description": "JavaScript Mocking Fundamentals",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.1.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kentcdodds/js-mocking-fundamentals.git"
+  },
+  "keywords": [],
+  "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kentcdodds/js-mocking-fundamentals/issues"
+  },
+  "homepage": "https://github.com/kentcdodds/js-mocking-fundamentals#readme"
+}
