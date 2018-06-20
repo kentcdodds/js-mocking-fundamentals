@@ -1,5 +1,5 @@
-import thumbWar from '../thumb-war'
-import * as utils from '../utils'
+const thumbWar = require('../thumb-war')
+const utils = require('../utils')
 
 test('returns winner', () => {
   jest.spyOn(utils, 'getWinner')
@@ -7,10 +7,11 @@ test('returns winner', () => {
 
   const winner = thumbWar('Ken Wheeler', 'Kent C. Dodds')
   expect(winner).toBe('Kent C. Dodds')
-  expect(utils.getWinner).toHaveBeenCalledTimes(2)
-  utils.getWinner.mock.calls.forEach(args => {
-    expect(args).toEqual(['Ken Wheeler', 'Kent C. Dodds'])
-  })
+  expect(utils.getWinner.mock.calls).toEqual([
+    ['Ken Wheeler', 'Kent C. Dodds'],
+    ['Ken Wheeler', 'Kent C. Dodds']
+  ])
 
+  // cleanup
   utils.getWinner.mockRestore()
 })

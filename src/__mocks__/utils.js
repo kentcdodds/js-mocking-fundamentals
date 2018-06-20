@@ -1,1 +1,3 @@
-export const getWinner = jest.fn((p1, p2) => p2)
+module.exports = {
+  getWinner: jest.fn((p1, p2) => p2)
+}
