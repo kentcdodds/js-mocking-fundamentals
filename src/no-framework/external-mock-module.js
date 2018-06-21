@@ -7,11 +7,11 @@ const assert = require('assert')
 const thumbWar = require('../thumb-war')
 const utils = require('../utils')
 
-const winner = thumbWar('Ken Wheeler', 'Kent C. Dodds')
+const winner = thumbWar('Kent C. Dodds', 'Ken Wheeler')
 assert.strictEqual(winner, 'Kent C. Dodds')
 assert.deepStrictEqual(utils.getWinner.mock.calls, [
-  ['Ken Wheeler', 'Kent C. Dodds'],
-  ['Ken Wheeler', 'Kent C. Dodds']
+  ['Kent C. Dodds', 'Ken Wheeler'],
+  ['Kent C. Dodds', 'Ken Wheeler']
 ])
 
 // cleanup

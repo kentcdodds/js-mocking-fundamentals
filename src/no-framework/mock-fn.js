@@ -13,13 +13,13 @@ function fn(impl = () => {}) {
 }
 
 const originalGetWinner = utils.getWinner
-utils.getWinner = fn((p1, p2) => p2)
+utils.getWinner = fn((p1, p2) => p1)
 
-const winner = thumbWar('Ken Wheeler', 'Kent C. Dodds')
+const winner = thumbWar('Kent C. Dodds', 'Ken Wheeler')
 assert.strictEqual(winner, 'Kent C. Dodds')
 assert.deepStrictEqual(utils.getWinner.mock.calls, [
-  ['Ken Wheeler', 'Kent C. Dodds'],
-  ['Ken Wheeler', 'Kent C. Dodds']
+  ['Kent C. Dodds', 'Ken Wheeler'],
+  ['Kent C. Dodds', 'Ken Wheeler']
 ])
 
 // cleanup
