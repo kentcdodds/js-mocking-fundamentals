@@ -12,5 +12,5 @@ test('returns winner', () => {
   ])
 
   // cleanup
-  utils.getWinner.mockReset()
+  utilsMock.getWinner.mockReset()
 })
