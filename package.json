@@ -9,9 +9,9 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
-    "create-jest-runner": "^0.4.0",
+    "create-jest-runner": "^0.5.3",
     "glob": "^7.1.2",
-    "jest": "^23.1.0"
+    "jest": "^24.9.0"
   },
   "scripts": {
     "test": "jest",
