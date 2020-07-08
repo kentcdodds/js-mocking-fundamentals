@@ -1,5 +1,5 @@
 <h1 align="center">
-  JavaScript Mocking Fundamentals
+  <a href="https://testingjavascript.com/courses/javascript-mocking-fundamentals">JavaScript Mocking Fundamentals</a>
 </h1>
 
 <div align="center">
