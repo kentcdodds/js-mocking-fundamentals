@@ -11,7 +11,7 @@
     "babel-preset-env": "^1.7.0",
     "create-jest-runner": "^0.7.0",
     "glob": "^7.1.6",
-    "jest": "^26.5.2"
+    "jest": "^26.6.3"
   },
   "scripts": {
     "test": "jest",
