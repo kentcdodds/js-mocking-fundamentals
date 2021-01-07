@@ -2,13 +2,12 @@ const assert = require('assert')
 const thumbWar = require('../thumb-war')
 const utils = require('../utils')
 
-function fn(impl = () => {}) {
+function fn(impl) {
   const mockFn = (...args) => {
     mockFn.mock.calls.push(args)
     return impl(...args)
   }
   mockFn.mock = {calls: []}
-  mockFn.mockImplementation = newImpl => (impl = newImpl)
   return mockFn
 }
 
