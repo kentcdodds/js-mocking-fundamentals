@@ -16,7 +16,7 @@
 <hr />
 
 <p align="center" style="font-size: 1.2rem;">
-  Learn how mocking in JavaScript tests works by implementing them from scratch!
+  Learn how mocking in JavaScript tests works by implementing them from scratch with Rowley!
 </p>
 
 <hr />
